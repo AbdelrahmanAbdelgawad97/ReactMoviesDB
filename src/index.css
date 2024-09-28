@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+:root {
+  --mainColor: #0d6efd;
+}
+
+.color-body {
+  background-color: white;
+  height: 100vh;
+}
+
+.nav-style {
+  height: 90px;
+  width: 1440px;
+  background-color: var(--mainColor);
+}
+
+.logo {
+  height: 72px;
+  width: 78px;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  height: 40px;
+  text-indent: 25px;
+  border-radius: 20px;
+}
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid red;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.card {
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer;
+  height: 375px;
+}
+
+.card_image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.3s;
+}
+
+.card:hover .card_overlay {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.card:hover .overlay_text {
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay_text {
+  color: white;
+  z-index: 30;
+  display: none;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: var(--mainColor) !important;
+}
+
+.card-story,
+.card-details {
+  background-color: #ddd ;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.card-text-details,
+.card-text-title {
+  font-weight: bold;
+  color: rgb(64, 62, 62);
+}
+
+.btn {
+  background-color: var(--mainColor);
+}
+
+.img-movie {
+  width: 400px;
+  height: 350px;
+}
